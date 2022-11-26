@@ -55,6 +55,10 @@ Classes
 
 - :ref:`exhale_class_classf3d_1_1options`
 
+- :ref:`exhale_class_classf3d_1_1plugin`
+
+- :ref:`exhale_class_classf3d_1_1reader`
+
 - :ref:`exhale_class_classf3d_1_1window`
 
 
