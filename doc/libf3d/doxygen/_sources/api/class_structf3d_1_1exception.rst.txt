@@ -12,7 +12,7 @@ Inheritance Relationships
 Base Type
 *********
 
-- ``public runtime_error``
+- ``public std::runtime_error``
 
 
 Derived Types
