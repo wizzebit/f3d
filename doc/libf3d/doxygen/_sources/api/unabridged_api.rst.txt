@@ -113,16 +113,6 @@ Classes and Structs
 .. toctree::
    :maxdepth: 5
 
-   classf3d_1_1plugin.rst
-
-.. toctree::
-   :maxdepth: 5
-
-   classf3d_1_1reader.rst
-
-.. toctree::
-   :maxdepth: 5
-
    classf3d_1_1window.rst
 
 Typedefs
