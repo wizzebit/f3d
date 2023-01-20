@@ -345,6 +345,17 @@
 </dd></dl>
 
 <dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N3f3d6engine12setCachePathERKNSt6stringE">
+<span id="_CPPv3N3f3d6engine12setCachePathERKNSt6stringE"></span><span id="_CPPv2N3f3d6engine12setCachePathERKNSt6stringE"></span><span id="f3d::engine::setCachePath__ssCR"></span><span class="target" id="classf3d_1_1engine_1a7039eefae52ffb49264cd4f07f2e8180"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setCachePath</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">cachePath</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3f3d6engine12setCachePathERKNSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set the cache path. Must be an absolute path. Currently, it’s only used to store HDRI baked textures. By default, the cache path is:<ul class="simple">
+<li><p>Windows: LOCALAPPDATA%\f3d</p></li>
+<li><p>Linux: ~/.cache/f3d</p></li>
+<li><p>macOS: ~/Library/Caches/f3d </p></li>
+</ul>
+</p>
+</dd></dl>
+
+<dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N3f3d6engine10setOptionsERK7options">
 <span id="_CPPv3N3f3d6engine10setOptionsERK7options"></span><span id="_CPPv2N3f3d6engine10setOptionsERK7options"></span><span id="f3d::engine::setOptions__optionsCR"></span><span class="target" id="classf3d_1_1engine_1a4613240a2cc5c27c0fa5f4c3107d20d7"></span><a class="reference internal" href="#_CPPv4N3f3d6engineE" title="f3d::engine"><span class="n"><span class="pre">engine</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">setOptions</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="classf3d_1_1options.html#_CPPv4N3f3d7optionsE" title="f3d::options"><span class="n"><span class="pre">options</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">opt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3f3d6engine10setOptionsERK7options" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Engine provide a default options that you can use using <a class="reference internal" href="#classf3d_1_1engine_1a82afa7d56eed653f1d378489fc4a91b9"><span class="std std-ref">engine::getOptions()</span></a>. But you can use this setter to use other options directly. It will copy options into engine. </p>
