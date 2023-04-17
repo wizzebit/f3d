@@ -1,7 +1,0 @@
-{
-  ".*(ex2)":
-  {
-    "load-plugins": "exodus",
-    "bar": true
-  }
-}

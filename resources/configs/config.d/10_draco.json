@@ -1,6 +1,0 @@
-{
-  ".*(drc)":
-  {
-    "load-plugins": "draco"
-  }
-}
