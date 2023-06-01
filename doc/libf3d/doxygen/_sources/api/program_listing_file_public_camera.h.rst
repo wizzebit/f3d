@@ -50,7 +50,7 @@ Program Listing for File camera.h
    
      virtual camera& resetToDefault() = 0;
    
-     virtual camera& resetToBounds() = 0;
+     virtual camera& resetToBounds(double zoomFactor = 0.9) = 0;
    
    protected:
      camera() = default;
