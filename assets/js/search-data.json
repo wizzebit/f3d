@@ -120,7 +120,7 @@
   },"17": {
     "doc": "libf3d Documentation",
     "title": "libf3d Documentation",
-    "content": "# libf3d Documentation - [Overview of the libf3d.](/doc/libf3d/OVERVIEW.html) - [libf3d classes introduction.](/doc/libf3d/CLASSES.html) - [Exhaustive list of libf3d options.](/doc/libf3d/OPTIONS.html) - [How to use libf3d bindings.](/doc/libf3d/BINDINGS.html) ",
+    "content": "# libf3d Documentation - [Overview of the libf3d.](/doc/libf3d/OVERVIEW.html) - [libf3d classes introduction.](/doc/libf3d/CLASSES.html) - [Exhaustive list of libf3d options.](/doc/libf3d/OPTIONS.html) - [How to use libf3d bindings.](/doc/libf3d/BINDINGS.html) - [How to create a plugin.](/doc/libf3d/PLUGINS.html) ",
     "url": "/doc/libf3d/README_LIBF3D.html",
     
     "relUrl": "/doc/libf3d/README_LIBF3D.html"
