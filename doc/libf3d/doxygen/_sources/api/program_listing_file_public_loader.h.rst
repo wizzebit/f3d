@@ -34,6 +34,10 @@ Program Listing for File loader.h
    
      virtual loader& loadGeometry(const std::string& filePath, bool reset = false) = 0;
    
+     virtual loader& loadGeometry(const std::vector<float>& positions,
+       const std::vector<unsigned int>& faceSizes, const std::vector<unsigned int>& faceIndices,
+       bool reset = false) = 0;
+   
      virtual bool hasSceneReader(const std::string& filePath) = 0;
    
      virtual loader& loadScene(const std::string& filePath) = 0;
