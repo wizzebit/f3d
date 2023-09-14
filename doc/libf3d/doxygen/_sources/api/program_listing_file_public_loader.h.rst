@@ -15,6 +15,7 @@ Program Listing for File loader.h
    
    #include "exception.h"
    #include "export.h"
+   #include "types.h"
    
    #include <string>
    #include <vector>
@@ -34,9 +35,7 @@ Program Listing for File loader.h
    
      virtual loader& loadGeometry(const std::string& filePath, bool reset = false) = 0;
    
-     virtual loader& loadGeometry(const std::vector<float>& positions,
-       const std::vector<unsigned int>& faceSizes, const std::vector<unsigned int>& faceIndices,
-       bool reset = false) = 0;
+     virtual loader& loadGeometry(const mesh_t& mesh, bool reset = false) = 0;
    
      virtual bool hasSceneReader(const std::string& filePath) = 0;
    

@@ -36,11 +36,11 @@
 <span class="n">f3d</span><span class="o">::</span><span class="n">engine</span> <span class="nf">eng</span><span class="p">();</span>
 
 <span class="c1">// Create a single triangle</span>
-<span class="n">eng</span><span class="p">.</span><span class="n">getLoader</span><span class="p">().</span><span class="n">loadGeometry</span><span class="p">(</span>
-  <span class="p">{</span> <span class="mf">0.</span><span class="n">f</span><span class="p">,</span> <span class="mf">0.</span><span class="n">f</span><span class="p">,</span> <span class="mf">0.</span><span class="n">f</span><span class="p">,</span> <span class="mf">0.</span><span class="n">f</span><span class="p">,</span> <span class="mf">1.</span><span class="n">f</span><span class="p">,</span> <span class="mf">0.</span><span class="n">f</span><span class="p">,</span> <span class="mf">1.</span><span class="n">f</span><span class="p">,</span> <span class="mf">0.</span><span class="n">f</span><span class="p">,</span> <span class="mf">0.</span><span class="n">f</span> <span class="p">},</span> <span class="c1">// positions</span>
-  <span class="p">{</span> <span class="mi">3</span> <span class="p">},</span> <span class="c1">// single triangle</span>
-  <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span> <span class="p">}</span> <span class="c1">// triangle indices</span>
-<span class="p">);</span>
+<span class="n">f3d</span><span class="o">::</span><span class="n">mesh_t</span> <span class="n">mesh</span> <span class="o">=</span> <span class="p">{};</span>
+<span class="n">mesh</span><span class="p">.</span><span class="n">points</span> <span class="o">=</span> <span class="p">{</span> <span class="mf">0.</span><span class="n">f</span><span class="p">,</span> <span class="mf">0.</span><span class="n">f</span><span class="p">,</span> <span class="mf">0.</span><span class="n">f</span><span class="p">,</span> <span class="mf">0.</span><span class="n">f</span><span class="p">,</span> <span class="mf">1.</span><span class="n">f</span><span class="p">,</span> <span class="mf">0.</span><span class="n">f</span><span class="p">,</span> <span class="mf">1.</span><span class="n">f</span><span class="p">,</span> <span class="mf">0.</span><span class="n">f</span><span class="p">,</span> <span class="mf">0.</span><span class="n">f</span> <span class="p">};</span>
+<span class="n">mesh</span><span class="p">.</span><span class="n">face_sides</span> <span class="o">=</span> <span class="p">{</span> <span class="mi">3</span> <span class="p">};</span>
+<span class="n">mesh</span><span class="p">.</span><span class="n">face_indices</span> <span class="o">=</span> <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span> <span class="p">};</span>
+<span class="n">eng</span><span class="p">.</span><span class="n">getLoader</span><span class="p">().</span><span class="n">loadGeometry</span><span class="p">(</span><span class="n">mesh</span><span class="p">);</span>
 
 <span class="c1">// Start rendering and interacting</span>
 <span class="n">eng</span><span class="p">.</span><span class="n">getInteractor</span><span class="p">().</span><span class="n">start</span><span class="p">();</span>
