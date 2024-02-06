@@ -55,8 +55,8 @@
     
     "relUrl": "/doc/dev/BUILD.html"
   },"8": {
-    "doc": "Coding Style",
-    "title": "Coding Style",
+    "doc": "Generate",
+    "title": "Generate",
     "content": "# Coding Style F3D use different coding styles in each component, however there are some common rules ## Common rules Overall syntax: - CamelCase. - Avoid using `using` for namespaces. - Initialize variables in header when possible. - Local variables starts with a lower case char. - Class members starts with a upper case char. - Indents are two spaces. - One space between instruction and parenthesis. - Always add curly brace after instruction. - Curly brace one a new line, aligned with instruction. - Add `//----------------------------------------------------------------------------` before any method in implementation. Example: ```cpp //---------------------------------------------------------------------------- void class::method() { if (condition) { std::vector myIntVector = { 13 }; } } ``` Includes: - Organized by category: `F3DApplication`, `libf3d`, `VTKExtensions`, `other deps`, `std`, `system`. - Sorted inside category. ## F3D Application rules - Class starts with `F3D` - Method starts with an uppercase char. ## libf3d rules - Class starts with a lower case char. - Method starts with an lower case char. ## VTKExtensions rules - Follow VTK rules - Method starts with an uppercase char. - Class starts with `vtkF3D` if inheriting from vtkObject. - Class starts with `F3D` if not inheriting from vtkObject. ",
     "url": "/doc/dev/CODING_STYLE.html",
     
@@ -76,8 +76,8 @@
     
     "relUrl": "/doc/dev/GETTING_STARTED.html"
   },"11": {
-    "doc": "Governance Policy",
-    "title": "Governance Policy",
+    "doc": "Governance",
+    "title": "Governance",
     "content": "# Governance Policy This document provides the governance policy for F3D (the \"Project\"). [Every person](/doc/dev/MAINTAINERS.html) responsible for its maintenance (the \"Maintainers\") agrees to this policy and to abide by all Project policies, including the [code of conduct](../../CODE-OF-CONDUCT.md) by adding their name to the [MAINTAINERS.md file](/doc/dev/MAINTAINERS.html). ## 1. Roles This Project includes the following roles. ### 1.1. Maintainers Maintainers are responsible for organizing activities around developing, maintaining, and updating the Project. Maintainers are also responsible for determining consensus. The Project may add or remove Maintainers by affirmative vote of 2/3 of all Maintainers. ### 1.2. Contributors Contributors are those who have made contributions to the Project. ## 2. Decisions ### 2.1 Consensus-Based Decision Making The Project makes decisions through the consensus of the Maintainers. While explicit agreement of all Maintainers is preferred, it is not required for consensus. Rather, the Maintainers will determine consensus based on their good faith consideration of several factors, including the dominant view of the Contributors and the nature of support and objections. The Maintainers will document evidence of consensus in accordance with these requirements using issues comments. ### 2.2. Appeal Process Decisions may be appealed by opening an issue and that appeal will be considered by the Maintainers in good faith, who will respond in writing within a reasonable time. ## 3. How We Work ### 3.1. Openness Participation is open to anyone who is directly and materially affected by the activity in question. There shall be no undue financial barriers to participation. ### 3.2. Balance The development process should balance the interests of Contributors and other stakeholders. Contributors from diverse interest categories shall be sought with the objective of achieving balance. ### 3.3. Coordination and Harmonization Good faith efforts shall be made to resolve potential conflicts or incompatibility between releases in the Project. ### 3.4. Consideration of Views and Objections Prompt consideration shall be given to the written views and objections of all Contributors. ### 3.5. Written procedures This governance document and other materials documenting the Project development process shall be available to any interested person. ## 4. No Confidentiality Information disclosed in connection with any Project activity, including but not limited to meetings, contributions, and submissions, is not confidential, regardless of any markings or statements to the contrary. ## 5. Amendments Amendments to this governance policy may be made by affirmative vote of 2/3 of all Maintainers. --- Modified from of MVG-0.1-beta GOVERNANCE.md. Licensed under the [CC-BY 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/). ",
     "url": "/doc/dev/GOVERNANCE.html",
     
@@ -92,13 +92,13 @@
   },"13": {
     "doc": "Developer Documentation",
     "title": "Developer Documentation",
-    "content": "# Developer Documentation - [How to get started with building F3D.](/doc/dev/GETTING_STARTED.html) - [How to build F3D.](/doc/dev/BUILD.html) - [How to test F3D.](/doc/dev/TESTING.html) - [How to contribute to F3D.](/CONTRIBUTING.html) - [How to Generate coverage and sanitizer report.](/doc/dev/GENERATE.html) - [Coding Style.](/doc/dev/CODING_STYLE.html) - [Roadmap and release cycle.](/doc/dev/ROADMAPS_AND_RELEASES.html) - [Governance.](/doc/dev/GOVERNANCE.html) - [Maintainers.](/doc/dev/MAINTAINERS.html) - [Code of conduct.](/CODE_OF_CONDUCT.md) ",
+    "content": "# Developer Documentation - [How to get started with building F3D.](/doc/dev/GETTING_STARTED.html) - [How to build F3D.](/doc/dev/BUILD.html) - [How to test F3D.](/doc/dev/TESTING.html) - [How to contribute to F3D.](/CONTRIBUTING.html) - [How to Generate coverage and sanitizer report.](/doc/dev/GENERATE.html) - [Coding Style.](/doc/dev/CODING_STYLE.html) - [Roadmaps and release cycle.](/doc/dev/ROADMAPS_AND_RELEASES.html) - [Governance.](/doc/dev/GOVERNANCE.html) - [Maintainers.](/doc/dev/MAINTAINERS.html) - [Code of conduct.](/CODE_OF_CONDUCT.md) ",
     "url": "/doc/dev/README_DEV.html",
     
     "relUrl": "/doc/dev/README_DEV.html"
   },"14": {
-    "doc": "Roadmaps and release cycles",
-    "title": "Roadmaps and release cycles",
+    "doc": "Roadmaps and release cycle",
+    "title": "Roadmaps and release cycle",
     "content": "# Roadmaps and release cycles F3D is a community driven project and we try to provide as much information as we can about the upcoming features and release expectations. Please keep in mind while we may try to fulfill what was planned, some features may not be available as planned and releases can be delayed. Roadmaps are available on their dedicated issue with their associated project board and milestone. They are bound to evolve over time. If you want to get involved, please feel free to comment on the issues and contribute to the issues that matters to you! ## 2.4.0 Our next minor release is planned for April 2024 - [Issue](https://github.com/f3d-app/f3d/issues/1242) - [Milestone](https://github.com/f3d-app/f3d/milestone/9) - [Board](https://github.com/orgs/f3d-app/projects/2/views/11?sliceBy%5Bvalue%5D=2.4.0) ## 3.0.0 Out next major release is planned for October 2024 - [Issue](https://github.com/f3d-app/f3d/issues/1243) - [Milestone](https://github.com/f3d-app/f3d/milestone/8) - [Board](https://github.com/orgs/f3d-app/projects/2/views/11?sliceBy%5Bvalue%5D=3.0.0) ## Release cycle F3D release cycle is one minor release every three months, in January, April, July and October. A minor release may be skipped before a major release. ",
     "url": "/doc/dev/ROADMAPS_AND_RELEASES.html",
     
