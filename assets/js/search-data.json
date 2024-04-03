@@ -204,7 +204,7 @@
   },"29": {
     "doc": "User Documentation",
     "title": "User Documentation",
-    "content": "# User Documentation - [How to use F3D.](/doc/user/USAGE.html) - [How to install F3D.](/doc/user/INSTALLATION.html) - [List of all F3D command line options.](/doc/user/OPTIONS.html) - [The different interactions in F3D.](/doc/user/INTERACTIONS.html) - [How to configure F3D using a configuration file.](/doc/user/CONFIGURATION_FILE.html) - [How to integrate F3D in your desktop.](/doc/user/DESKTOP_INTEGRATION.html) - [Limitations and troubleshooting of F3D.](/doc/user/LIMITATIONS_AND_TROUBLESHOOTING.html) ",
+    "content": "# User Documentation - [How to use F3D.](/doc/user/USAGE.html) - [How to install F3D.](/doc/user/INSTALLATION.html) - [List of all F3D command line options.](/doc/user/OPTIONS.html) - [The different interactions in F3D.](/doc/user/INTERACTIONS.html) - [How to use colormaps in F3D.](/doc/user/COLOR_MAPS.html) - [How to configure F3D using a configuration file.](/doc/user/CONFIGURATION_FILE.html) - [How to integrate F3D in your desktop.](/doc/user/DESKTOP_INTEGRATION.html) - [Limitations and troubleshooting of F3D.](/doc/user/LIMITATIONS_AND_TROUBLESHOOTING.html) ",
     "url": "/doc/user/README_USER.html",
     
     "relUrl": "/doc/user/README_USER.html"
