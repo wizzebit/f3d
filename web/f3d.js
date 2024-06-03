@@ -62,7 +62,7 @@ if (ENVIRONMENT_IS_NODE) {
 
 // --pre-jses are emitted after the Module integration code, so that they can
 // refer to Module (if they choose; they can also define Module)
-// include: /tmp/tmpydhcpqqp.js
+// include: /tmp/tmphs7a3h3e.js
 
   if (!Module.expectedDataFileDownloads) {
     Module.expectedDataFileDownloads = 0;
@@ -242,21 +242,21 @@ var REMOTE_PACKAGE_SIZE = metadata['remote_package_size'];
 
   })();
 
-// end include: /tmp/tmpydhcpqqp.js
-// include: /tmp/tmpr_qg5l4i.js
+// end include: /tmp/tmphs7a3h3e.js
+// include: /tmp/tmpsxcrekss.js
 
     // All the pre-js content up to here must remain later on, we need to run
     // it.
     if (Module['$ww'] || (typeof ENVIRONMENT_IS_PTHREAD != 'undefined' && ENVIRONMENT_IS_PTHREAD)) Module['preRun'] = [];
     var necessaryPreJSTasks = Module['preRun'].slice();
-  // end include: /tmp/tmpr_qg5l4i.js
-// include: /tmp/tmp50jrkktj.js
+  // end include: /tmp/tmpsxcrekss.js
+// include: /tmp/tmp8ykc__b4.js
 
     if (!Module['preRun']) throw 'Module.preRun should exist because file support used it; did a pre-js delete it?';
     necessaryPreJSTasks.forEach(function(task) {
       if (Module['preRun'].indexOf(task) < 0) throw 'All preRun tasks that exist before user pre-js code should remain after; did you replace Module or modify Module.preRun?';
     });
-  // end include: /tmp/tmp50jrkktj.js
+  // end include: /tmp/tmp8ykc__b4.js
 
 
 // Sometimes an existing Module object exists with properties
@@ -1153,7 +1153,7 @@ function dbg(...args) {
 // === Body ===
 
 var ASM_CONSTS = {
-  2390116: ($0) => { if (Module['canvas']) { Module['canvas'].style['cursor'] = $0 ? 'default' : 'none'; } }
+  2377364: ($0) => { if (Module['canvas']) { Module['canvas'].style['cursor'] = $0 ? 'default' : 'none'; } }
 };
 
 // end include: preamble.js
@@ -4282,18 +4282,6 @@ var ASM_CONSTS = {
         return ret;
       },
   };
-  function ___syscall_chmod(path, mode) {
-  try {
-  
-      path = SYSCALLS.getStr(path);
-      FS.chmod(path, mode);
-      return 0;
-    } catch (e) {
-    if (typeof FS == 'undefined' || !(e.name === 'ErrnoError')) throw e;
-    return -e.errno;
-  }
-  }
-
   function ___syscall_faccessat(dirfd, path, amode, flags) {
   try {
   
@@ -4640,42 +4628,11 @@ var ASM_CONSTS = {
   }
   }
 
-  function ___syscall_rmdir(path) {
-  try {
-  
-      path = SYSCALLS.getStr(path);
-      FS.rmdir(path);
-      return 0;
-    } catch (e) {
-    if (typeof FS == 'undefined' || !(e.name === 'ErrnoError')) throw e;
-    return -e.errno;
-  }
-  }
-
   function ___syscall_stat64(path, buf) {
   try {
   
       path = SYSCALLS.getStr(path);
       return SYSCALLS.doStat(FS.stat, path, buf);
-    } catch (e) {
-    if (typeof FS == 'undefined' || !(e.name === 'ErrnoError')) throw e;
-    return -e.errno;
-  }
-  }
-
-  function ___syscall_unlinkat(dirfd, path, flags) {
-  try {
-  
-      path = SYSCALLS.getStr(path);
-      path = SYSCALLS.calculateAt(dirfd, path);
-      if (flags === 0) {
-        FS.unlink(path);
-      } else if (flags === 512) {
-        FS.rmdir(path);
-      } else {
-        abort('Invalid flags passed to unlinkat');
-      }
-      return 0;
     } catch (e) {
     if (typeof FS == 'undefined' || !(e.name === 'ErrnoError')) throw e;
     return -e.errno;
@@ -10663,8 +10620,6 @@ var wasmImports = {
   /** @export */
   __resumeException: ___resumeException,
   /** @export */
-  __syscall_chmod: ___syscall_chmod,
-  /** @export */
   __syscall_faccessat: ___syscall_faccessat,
   /** @export */
   __syscall_fcntl64: ___syscall_fcntl64,
@@ -10687,11 +10642,7 @@ var wasmImports = {
   /** @export */
   __syscall_readlinkat: ___syscall_readlinkat,
   /** @export */
-  __syscall_rmdir: ___syscall_rmdir,
-  /** @export */
   __syscall_stat64: ___syscall_stat64,
-  /** @export */
-  __syscall_unlinkat: ___syscall_unlinkat,
   /** @export */
   _abort_js: __abort_js,
   /** @export */
