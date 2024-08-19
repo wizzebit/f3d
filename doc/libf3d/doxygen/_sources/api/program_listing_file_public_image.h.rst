@@ -101,6 +101,11 @@ Program Listing for File image.h
        explicit read_exception(const std::string& what = "");
      };
    
+     struct metadata_exception : public exception
+     {
+       explicit metadata_exception(const std::string& what = "");
+     };
+   
    private:
      class internals;
      internals* Internals;
