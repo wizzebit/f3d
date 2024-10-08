@@ -17,6 +17,7 @@ Program Listing for File loader.h
    #include "export.h"
    #include "types.h"
    
+   #include <filesystem>
    #include <string>
    #include <vector>
    
@@ -31,15 +32,26 @@ Program Listing for File loader.h
          : exception(what){};
      };
    
-     virtual bool hasGeometryReader(const std::string& filePath) = 0;
    
-     virtual loader& loadGeometry(const std::string& filePath, bool reset = false) = 0;
+     virtual loader& add(const std::filesystem::path& filePath) = 0;
+     virtual loader& add(const std::vector<std::filesystem::path>& filePath) = 0;
+     virtual loader& add(const std::vector<std::string>& filePathStrings) = 0;
    
-     virtual loader& loadGeometry(const mesh_t& mesh, bool reset = false) = 0;
+     virtual loader& add(const mesh_t& mesh) = 0;
    
-     virtual bool hasSceneReader(const std::string& filePath) = 0;
    
-     virtual loader& loadScene(const std::string& filePath) = 0;
+     loader& add(std::initializer_list<std::string> list)
+     {
+       return this->add(std::vector<std::string>(list));
+     }
+     loader& add(std::initializer_list<std::filesystem::path> list)
+     {
+       return this->add(std::vector<std::filesystem::path>(list));
+     }
+   
+     virtual loader& clear() = 0;
+   
+     virtual bool supports(const std::filesystem::path& filePath) = 0;
    
    protected:
      loader() = default;
