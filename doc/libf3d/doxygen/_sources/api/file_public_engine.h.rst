@@ -36,11 +36,11 @@ Includes
 
 - ``interactor.h`` (:ref:`file_public_interactor.h`)
 
-- ``loader.h`` (:ref:`file_public_loader.h`)
-
 - ``map``
 
 - ``options.h``
+
+- ``scene.h`` (:ref:`file_public_scene.h`)
 
 - ``string``
 

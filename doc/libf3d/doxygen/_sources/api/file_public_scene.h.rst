@@ -1,8 +1,8 @@
 
-.. _file_public_loader.h:
+.. _file_public_scene.h:
 
-File loader.h
-=============
+File scene.h
+============
 
 |exhale_lsh| :ref:`Parent directory <dir_public>` (``public``)
 
@@ -13,14 +13,14 @@ File loader.h
    :local:
    :backlinks: none
 
-Definition (``public/loader.h``)
---------------------------------
+Definition (``public/scene.h``)
+-------------------------------
 
 
 .. toctree::
    :maxdepth: 1
 
-   program_listing_file_public_loader.h.rst
+   program_listing_file_public_scene.h.rst
 
 
 
@@ -50,8 +50,6 @@ Included By
 
 - :ref:`file_public_engine.h`
 
-- :ref:`file_public_interactor.h`
-
 
 
 
@@ -66,7 +64,7 @@ Classes
 -------
 
 
-- :ref:`exhale_struct_structf3d_1_1loader_1_1load__failure__exception`
+- :ref:`exhale_struct_structf3d_1_1scene_1_1load__failure__exception`
 
-- :ref:`exhale_class_classf3d_1_1loader`
+- :ref:`exhale_class_classf3d_1_1scene`
 

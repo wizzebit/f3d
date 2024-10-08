@@ -35,11 +35,11 @@ Classes
 
 - :ref:`exhale_struct_structf3d_1_1image_1_1write__exception`
 
-- :ref:`exhale_struct_structf3d_1_1loader_1_1load__failure__exception`
-
 - :ref:`exhale_struct_structf3d_1_1mesh__t`
 
 - :ref:`exhale_struct_structf3d_1_1point3__t`
+
+- :ref:`exhale_struct_structf3d_1_1scene_1_1load__failure__exception`
 
 - :ref:`exhale_struct_structf3d_1_1vector3__t`
 
@@ -53,11 +53,11 @@ Classes
 
 - :ref:`exhale_class_classf3d_1_1interactor`
 
-- :ref:`exhale_class_classf3d_1_1loader`
-
 - :ref:`exhale_class_classf3d_1_1log`
 
 - :ref:`exhale_class_classf3d_1_1ratio__t`
+
+- :ref:`exhale_class_classf3d_1_1scene`
 
 - :ref:`exhale_class_classf3d_1_1utils`
 

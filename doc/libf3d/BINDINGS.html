@@ -8,7 +8,7 @@
   <span class="s">"render.grid.enable"</span><span class="p">:</span> <span class="bp">True</span><span class="p">,</span>
   <span class="p">})</span>
 
-<span class="n">eng</span><span class="p">.</span><span class="n">loader</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="s">"f3d/testing/data/dragon.vtu"</span><span class="p">)</span>
+<span class="n">eng</span><span class="p">.</span><span class="n">scene</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="s">"f3d/testing/data/dragon.vtu"</span><span class="p">)</span>
 <span class="n">eng</span><span class="p">.</span><span class="n">interactor</span><span class="p">.</span><span class="n">start</span><span class="p">()</span>
 </code></pre></div></div> <p>You can see more examples using python bindings in the dedicated example folder <a href="https://github.com/f3d-app/f3d/tree/master/examples/libf3d/python">here</a>.</p> <h2 id="java-experimental"> <a href="#java-experimental" class="anchor-heading" aria-labelledby="java-experimental"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Java (experimental) </h2> <p>If the Java bindings have been generated using the <code class="language-plaintext highlighter-rouge">F3D_BINDINGS_JAVA</code> CMake option, the libf3d can be used directly from Java. You can import the <code class="language-plaintext highlighter-rouge">f3d.jar</code> package and use the provided Java classes directly. Make sure to set <code class="language-plaintext highlighter-rouge">java.library.path</code> to the path where the JNI library is built. Here is an example showing how to use libf3d Java bindings:</p> <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">app.f3d.F3D.*</span><span class="o">;</span>
 
@@ -19,8 +19,8 @@
 
     <span class="c1">// Always use try-with-resources idiom to ensure the native engine is released</span>
     <span class="k">try</span> <span class="o">(</span><span class="nc">Engine</span> <span class="n">engine</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Engine</span><span class="o">(</span><span class="nc">Window</span><span class="o">.</span><span class="na">Type</span><span class="o">.</span><span class="na">NATIVE</span><span class="o">))</span> <span class="o">{</span>
-      <span class="nc">Loader</span> <span class="n">loader</span> <span class="o">=</span> <span class="n">engine</span><span class="o">.</span><span class="na">getLoader</span><span class="o">();</span>
-      <span class="n">loader</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"f3d/testing/data/dragon.vtu"</span><span class="o">);</span>
+      <span class="nc">Scene</span> <span class="n">scene</span> <span class="o">=</span> <span class="n">engine</span><span class="o">.</span><span class="na">getScene</span><span class="o">();</span>
+      <span class="n">scene</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"f3d/testing/data/dragon.vtu"</span><span class="o">);</span>
 
       <span class="n">engine</span><span class="o">.</span><span class="na">getWindow</span><span class="o">().</span><span class="na">render</span><span class="o">();</span>
     <span class="o">}</span>

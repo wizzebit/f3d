@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>Class loader &#8212; libf3d 2.5.0 documentation</title>
+    <title>Class scene &#8212; libf3d 2.5.0 documentation</title>
   
   
   
@@ -46,11 +46,11 @@
     <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
     <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'api/classf3d_1_1loader';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'api/classf3d_1_1scene';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Class log" href="classf3d_1_1log.html" />
-    <link rel="prev" title="Class interactor" href="classf3d_1_1interactor.html" />
+    <link rel="next" title="Class utils" href="classf3d_1_1utils.html" />
+    <link rel="prev" title="Class ratio_t" href="classf3d_1_1ratio__t.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -140,18 +140,18 @@
 <li class="toctree-l2"><a class="reference internal" href="structf3d_1_1image_1_1metadata__exception.html">Struct image::metadata_exception</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structf3d_1_1image_1_1read__exception.html">Struct image::read_exception</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structf3d_1_1image_1_1write__exception.html">Struct image::write_exception</a></li>
-<li class="toctree-l2"><a class="reference internal" href="structf3d_1_1loader_1_1load__failure__exception.html">Struct loader::load_failure_exception</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structf3d_1_1mesh__t.html">Struct mesh_t</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structf3d_1_1point3__t.html">Struct point3_t</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structf3d_1_1scene_1_1load__failure__exception.html">Struct scene::load_failure_exception</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structf3d_1_1vector3__t.html">Struct vector3_t</a></li>
 <li class="toctree-l2"><a class="reference internal" href="classf3d_1_1camera.html">Class camera</a></li>
 <li class="toctree-l2"><a class="reference internal" href="classf3d_1_1engine.html">Class engine</a></li>
 <li class="toctree-l2"><a class="reference internal" href="class_structf3d_1_1exception.html">Class exception</a></li>
 <li class="toctree-l2"><a class="reference internal" href="classf3d_1_1image.html">Class image</a></li>
 <li class="toctree-l2"><a class="reference internal" href="classf3d_1_1interactor.html">Class interactor</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Class loader</a></li>
 <li class="toctree-l2"><a class="reference internal" href="classf3d_1_1log.html">Class log</a></li>
 <li class="toctree-l2"><a class="reference internal" href="classf3d_1_1ratio__t.html">Class ratio_t</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Class scene</a></li>
 <li class="toctree-l2"><a class="reference internal" href="classf3d_1_1utils.html">Class utils</a></li>
 <li class="toctree-l2"><a class="reference internal" href="classf3d_1_1window.html">Class window</a></li>
 <li class="toctree-l2"><a class="reference internal" href="typedef_types_8h_1a62f3e15e4e18455b52854622b27c02ed.html">Typedef f3d::angle_deg_t</a></li>
@@ -211,7 +211,7 @@
       
       
       
-      <li><a href="../_sources/api/classf3d_1_1loader.rst" target="_blank"
+      <li><a href="../_sources/api/classf3d_1_1scene.rst" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -293,7 +293,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Class loader</h1>
+    <h1>Class scene</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -319,30 +319,30 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="class-loader">
-<span id="exhale-class-classf3d-1-1loader"></span><h1>Class loader<a class="headerlink" href="#class-loader" title="Permalink to this heading">#</a></h1>
+  <section id="class-scene">
+<span id="exhale-class-classf3d-1-1scene"></span><h1>Class scene<a class="headerlink" href="#class-scene" title="Permalink to this heading">#</a></h1>
 <ul class="simple">
-<li><p>Defined in <a class="reference internal" href="file_public_loader.h.html#file-public-loader-h"><span class="std std-ref">File loader.h</span></a></p></li>
+<li><p>Defined in <a class="reference internal" href="file_public_scene.h.html#file-public-scene-h"><span class="std std-ref">File scene.h</span></a></p></li>
 </ul>
 <section id="nested-relationships">
 <h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this heading">#</a></h2>
 <section id="nested-types">
 <h3>Nested Types<a class="headerlink" href="#nested-types" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
-<li><p><a class="reference internal" href="structf3d_1_1loader_1_1load__failure__exception.html#exhale-struct-structf3d-1-1loader-1-1load-failure-exception"><span class="std std-ref">Struct loader::load_failure_exception</span></a></p></li>
+<li><p><a class="reference internal" href="structf3d_1_1scene_1_1load__failure__exception.html#exhale-struct-structf3d-1-1scene-1-1load-failure-exception"><span class="std std-ref">Struct scene::load_failure_exception</span></a></p></li>
 </ul>
 </section>
 </section>
 <section id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this heading">#</a></h2>
 <dl class="cpp class">
-<dt class="sig sig-object cpp" id="_CPPv4N3f3d6loaderE">
-<span id="_CPPv3N3f3d6loaderE"></span><span id="_CPPv2N3f3d6loaderE"></span><span id="f3d::loader"></span><span class="target" id="classf3d_1_1loader"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">loader</span></span></span><a class="headerlink" href="#_CPPv4N3f3d6loaderE" title="Permalink to this definition">#</a><br /></dt>
-<dd><p>Class to load files in F3D. </p>
-<p>A class to load files in F3D. The loader can load a full scene or multiple geometries into a default scene. It also support checking if a scene or geometry reader is available for a given file.</p>
+<dt class="sig sig-object cpp" id="_CPPv4N3f3d5sceneE">
+<span id="_CPPv3N3f3d5sceneE"></span><span id="_CPPv2N3f3d5sceneE"></span><span id="f3d::scene"></span><span class="target" id="classf3d_1_1scene"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">scene</span></span></span><a class="headerlink" href="#_CPPv4N3f3d5sceneE" title="Permalink to this definition">#</a><br /></dt>
+<dd><p>Class to load files into. </p>
+<p>The scene where files and meshes can be added and loaded into.</p>
 <p>Example usage: <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">...</span>
 <span class="n">f3d</span><span class="o">::</span><span class="n">engine</span><span class="w"> </span><span class="n">eng</span><span class="p">(</span><span class="n">f3d</span><span class="o">::</span><span class="n">window</span><span class="o">::</span><span class="n">Type</span><span class="o">::</span><span class="n">NATIVE</span><span class="p">);</span>
-<span class="n">f3d</span><span class="o">::</span><span class="n">loader</span><span class="o">&amp;</span><span class="w"> </span><span class="n">load</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">eng</span><span class="p">.</span><span class="n">getLoader</span><span class="p">();</span>
+<span class="n">f3d</span><span class="o">::</span><span class="n">scene</span><span class="o">&amp;</span><span class="w"> </span><span class="n">load</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">eng</span><span class="p">.</span><span class="n">getScene</span><span class="p">();</span>
 
 <span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">load</span><span class="p">.</span><span class="n">supports</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
 <span class="p">{</span>
@@ -354,20 +354,20 @@ document.write(`
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-unnamed-group">Unnamed Group</p>
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3f3d6loader3addERKNSt10filesystem4pathE">
-<span id="_CPPv3N3f3d6loader3addERKNSt10filesystem4pathE"></span><span id="_CPPv2N3f3d6loader3addERKNSt10filesystem4pathE"></span><span id="f3d::loader::add__std::filesystem::pathCR"></span><span class="target" id="classf3d_1_1loader_1ac9917516bcd256137afc55eac7e768ff"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N3f3d6loaderE" title="f3d::loader"><span class="n"><span class="pre">loader</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">add</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">filesystem</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">path</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">filePath</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N3f3d6loader3addERKNSt10filesystem4pathE" title="Permalink to this definition">#</a><br /></dt>
+<dt class="sig sig-object cpp" id="_CPPv4N3f3d5scene3addERKNSt10filesystem4pathE">
+<span id="_CPPv3N3f3d5scene3addERKNSt10filesystem4pathE"></span><span id="_CPPv2N3f3d5scene3addERKNSt10filesystem4pathE"></span><span id="f3d::scene::add__std::filesystem::pathCR"></span><span class="target" id="classf3d_1_1scene_1a9ebcb8762068f54d341fdfa93f04db1f"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N3f3d5sceneE" title="f3d::scene"><span class="n"><span class="pre">scene</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">add</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">filesystem</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">path</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">filePath</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N3f3d5scene3addERKNSt10filesystem4pathE" title="Permalink to this definition">#</a><br /></dt>
 <dd><p>Add and load provided files into the scene Already added file will NOT be reloaded </p>
 </dd></dl>
 
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3f3d6loader3addERKNSt6vectorINSt10filesystem4pathEEE">
-<span id="_CPPv3N3f3d6loader3addERKNSt6vectorINSt10filesystem4pathEEE"></span><span id="_CPPv2N3f3d6loader3addERKNSt6vectorINSt10filesystem4pathEEE"></span><span id="f3d::loader::add__std::vector:std::filesystem::path:CR"></span><span class="target" id="classf3d_1_1loader_1abca7df83d63b6a9b31a0e806398ca1a7"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N3f3d6loaderE" title="f3d::loader"><span class="n"><span class="pre">loader</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">add</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">filesystem</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">filePath</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N3f3d6loader3addERKNSt6vectorINSt10filesystem4pathEEE" title="Permalink to this definition">#</a><br /></dt>
+<dt class="sig sig-object cpp" id="_CPPv4N3f3d5scene3addERKNSt6vectorINSt10filesystem4pathEEE">
+<span id="_CPPv3N3f3d5scene3addERKNSt6vectorINSt10filesystem4pathEEE"></span><span id="_CPPv2N3f3d5scene3addERKNSt6vectorINSt10filesystem4pathEEE"></span><span id="f3d::scene::add__std::vector:std::filesystem::path:CR"></span><span class="target" id="classf3d_1_1scene_1a5375bf1d2ac83cbf0a1732480c5c3cd5"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N3f3d5sceneE" title="f3d::scene"><span class="n"><span class="pre">scene</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">add</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">filesystem</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">filePath</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N3f3d5scene3addERKNSt6vectorINSt10filesystem4pathEEE" title="Permalink to this definition">#</a><br /></dt>
 <dd><p>Add and load provided files into the scene Already added file will NOT be reloaded </p>
 </dd></dl>
 
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3f3d6loader3addERKNSt6vectorINSt6stringEEE">
-<span id="_CPPv3N3f3d6loader3addERKNSt6vectorINSt6stringEEE"></span><span id="_CPPv2N3f3d6loader3addERKNSt6vectorINSt6stringEEE"></span><span id="f3d::loader::add__std::vector:ss:CR"></span><span class="target" id="classf3d_1_1loader_1aa3cbd5ff10dd57d4b9a8518167b85f5c"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N3f3d6loaderE" title="f3d::loader"><span class="n"><span class="pre">loader</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">add</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">filePathStrings</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N3f3d6loader3addERKNSt6vectorINSt6stringEEE" title="Permalink to this definition">#</a><br /></dt>
+<dt class="sig sig-object cpp" id="_CPPv4N3f3d5scene3addERKNSt6vectorINSt6stringEEE">
+<span id="_CPPv3N3f3d5scene3addERKNSt6vectorINSt6stringEEE"></span><span id="_CPPv2N3f3d5scene3addERKNSt6vectorINSt6stringEEE"></span><span id="f3d::scene::add__std::vector:ss:CR"></span><span class="target" id="classf3d_1_1scene_1a71632f08c505714dab35b3829afeae83"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N3f3d5sceneE" title="f3d::scene"><span class="n"><span class="pre">scene</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">add</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">filePathStrings</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N3f3d5scene3addERKNSt6vectorINSt6stringEEE" title="Permalink to this definition">#</a><br /></dt>
 <dd><p>Add and load provided files into the scene Already added file will NOT be reloaded </p>
 </dd></dl>
 
@@ -375,14 +375,14 @@ document.write(`
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-unnamed-group">Unnamed Group</p>
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3f3d6loader3addENSt16initializer_listINSt6stringEEE">
-<span id="_CPPv3N3f3d6loader3addENSt16initializer_listINSt6stringEEE"></span><span id="_CPPv2N3f3d6loader3addENSt16initializer_listINSt6stringEEE"></span><span id="f3d::loader::add__std::initializer_list:ss:"></span><span class="target" id="classf3d_1_1loader_1a3eaf3e071ade79551bf0022cabdf69e2"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N3f3d6loaderE" title="f3d::loader"><span class="n"><span class="pre">loader</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">add</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">initializer_list</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">list</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3f3d6loader3addENSt16initializer_listINSt6stringEEE" title="Permalink to this definition">#</a><br /></dt>
+<dt class="sig sig-object cpp" id="_CPPv4N3f3d5scene3addENSt16initializer_listINSt6stringEEE">
+<span id="_CPPv3N3f3d5scene3addENSt16initializer_listINSt6stringEEE"></span><span id="_CPPv2N3f3d5scene3addENSt16initializer_listINSt6stringEEE"></span><span id="f3d::scene::add__std::initializer_list:ss:"></span><span class="target" id="classf3d_1_1scene_1a8953043495244f79480efa0e87c65d81"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N3f3d5sceneE" title="f3d::scene"><span class="n"><span class="pre">scene</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">add</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">initializer_list</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">list</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3f3d5scene3addENSt16initializer_listINSt6stringEEE" title="Permalink to this definition">#</a><br /></dt>
 <dd><p>Convenience initializer list signature for add method </p>
 </dd></dl>
 
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3f3d6loader3addENSt16initializer_listINSt10filesystem4pathEEE">
-<span id="_CPPv3N3f3d6loader3addENSt16initializer_listINSt10filesystem4pathEEE"></span><span id="_CPPv2N3f3d6loader3addENSt16initializer_listINSt10filesystem4pathEEE"></span><span id="f3d::loader::add__std::initializer_list:std::filesystem::path:"></span><span class="target" id="classf3d_1_1loader_1a4d9794c1e488476aa66c83d030702425"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N3f3d6loaderE" title="f3d::loader"><span class="n"><span class="pre">loader</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">add</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">initializer_list</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">filesystem</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">list</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3f3d6loader3addENSt16initializer_listINSt10filesystem4pathEEE" title="Permalink to this definition">#</a><br /></dt>
+<dt class="sig sig-object cpp" id="_CPPv4N3f3d5scene3addENSt16initializer_listINSt10filesystem4pathEEE">
+<span id="_CPPv3N3f3d5scene3addENSt16initializer_listINSt10filesystem4pathEEE"></span><span id="_CPPv2N3f3d5scene3addENSt16initializer_listINSt10filesystem4pathEEE"></span><span id="f3d::scene::add__std::initializer_list:std::filesystem::path:"></span><span class="target" id="classf3d_1_1scene_1a568824d49b75db3dbb503c112cc63993"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N3f3d5sceneE" title="f3d::scene"><span class="n"><span class="pre">scene</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">add</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">initializer_list</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">filesystem</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">list</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3f3d5scene3addENSt16initializer_listINSt10filesystem4pathEEE" title="Permalink to this definition">#</a><br /></dt>
 <dd><p>Convenience initializer list signature for add method </p>
 </dd></dl>
 
@@ -390,33 +390,33 @@ document.write(`
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3f3d6loader3addERK6mesh_t">
-<span id="_CPPv3N3f3d6loader3addERK6mesh_t"></span><span id="_CPPv2N3f3d6loader3addERK6mesh_t"></span><span id="f3d::loader::add__mesh_tCR"></span><span class="target" id="classf3d_1_1loader_1a25c884a3928c646b3c66dc0e999d3b05"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N3f3d6loaderE" title="f3d::loader"><span class="n"><span class="pre">loader</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">add</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="structf3d_1_1mesh__t.html#_CPPv4N3f3d6mesh_tE" title="f3d::mesh_t"><span class="n"><span class="pre">mesh_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">mesh</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N3f3d6loader3addERK6mesh_t" title="Permalink to this definition">#</a><br /></dt>
+<dt class="sig sig-object cpp" id="_CPPv4N3f3d5scene3addERK6mesh_t">
+<span id="_CPPv3N3f3d5scene3addERK6mesh_t"></span><span id="_CPPv2N3f3d5scene3addERK6mesh_t"></span><span id="f3d::scene::add__mesh_tCR"></span><span class="target" id="classf3d_1_1scene_1a98a66ab7863f07582250cc0d9c8e7d59"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N3f3d5sceneE" title="f3d::scene"><span class="n"><span class="pre">scene</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">add</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="structf3d_1_1mesh__t.html#_CPPv4N3f3d6mesh_tE" title="f3d::mesh_t"><span class="n"><span class="pre">mesh_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">mesh</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N3f3d5scene3addERK6mesh_t" title="Permalink to this definition">#</a><br /></dt>
 <dd><p>Add and load provided mesh into the scene </p>
 </dd></dl>
 
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3f3d6loader5clearEv">
-<span id="_CPPv3N3f3d6loader5clearEv"></span><span id="_CPPv2N3f3d6loader5clearEv"></span><span id="f3d::loader::clear"></span><span class="target" id="classf3d_1_1loader_1a062e914d93b7e6dce1d87995884bcaa9"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N3f3d6loaderE" title="f3d::loader"><span class="n"><span class="pre">loader</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">clear</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N3f3d6loader5clearEv" title="Permalink to this definition">#</a><br /></dt>
+<dt class="sig sig-object cpp" id="_CPPv4N3f3d5scene5clearEv">
+<span id="_CPPv3N3f3d5scene5clearEv"></span><span id="_CPPv2N3f3d5scene5clearEv"></span><span id="f3d::scene::clear"></span><span class="target" id="classf3d_1_1scene_1a4429ced2ddbb307083ce097d49f2d7a0"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N3f3d5sceneE" title="f3d::scene"><span class="n"><span class="pre">scene</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">clear</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N3f3d5scene5clearEv" title="Permalink to this definition">#</a><br /></dt>
 <dd><p>Clear the scene of all added files </p>
 </dd></dl>
 
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3f3d6loader8supportsERKNSt10filesystem4pathE">
-<span id="_CPPv3N3f3d6loader8supportsERKNSt10filesystem4pathE"></span><span id="_CPPv2N3f3d6loader8supportsERKNSt10filesystem4pathE"></span><span id="f3d::loader::supports__std::filesystem::pathCR"></span><span class="target" id="classf3d_1_1loader_1a88fe1912d6a92487ebf90c3dc61aafde"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">supports</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">filesystem</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">path</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">filePath</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N3f3d6loader8supportsERKNSt10filesystem4pathE" title="Permalink to this definition">#</a><br /></dt>
+<dt class="sig sig-object cpp" id="_CPPv4N3f3d5scene8supportsERKNSt10filesystem4pathE">
+<span id="_CPPv3N3f3d5scene8supportsERKNSt10filesystem4pathE"></span><span id="_CPPv2N3f3d5scene8supportsERKNSt10filesystem4pathE"></span><span id="f3d::scene::supports__std::filesystem::pathCR"></span><span class="target" id="classf3d_1_1scene_1a7542a5ca95dd82a89a3b7772cb416dfd"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">supports</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">filesystem</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">path</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">filePath</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N3f3d5scene8supportsERKNSt10filesystem4pathE" title="Permalink to this definition">#</a><br /></dt>
 <dd><p>Return true if provided file path is supported, false otherwise. </p>
 </dd></dl>
 
 </div>
 <dl class="cpp struct">
-<dt class="sig sig-object cpp" id="_CPPv4N3f3d6loader22load_failure_exceptionE">
-<span id="_CPPv3N3f3d6loader22load_failure_exceptionE"></span><span id="_CPPv2N3f3d6loader22load_failure_exceptionE"></span><span id="f3d::loader::load_failure_exception"></span><span class="target" id="structf3d_1_1loader_1_1load__failure__exception"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">load_failure_exception</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">f3d</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="class_structf3d_1_1exception.html#_CPPv4N3f3d9exceptionE" title="f3d::exception"><span class="n"><span class="pre">exception</span></span></a><a class="headerlink" href="#_CPPv4N3f3d6loader22load_failure_exceptionE" title="Permalink to this definition">#</a><br /></dt>
-<dd><p>An exception that can be thrown by the loader when it failed to load a file for some reason. </p>
+<dt class="sig sig-object cpp" id="_CPPv4N3f3d5scene22load_failure_exceptionE">
+<span id="_CPPv3N3f3d5scene22load_failure_exceptionE"></span><span id="_CPPv2N3f3d5scene22load_failure_exceptionE"></span><span id="f3d::scene::load_failure_exception"></span><span class="target" id="structf3d_1_1scene_1_1load__failure__exception"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">load_failure_exception</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">f3d</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="class_structf3d_1_1exception.html#_CPPv4N3f3d9exceptionE" title="f3d::exception"><span class="n"><span class="pre">exception</span></span></a><a class="headerlink" href="#_CPPv4N3f3d5scene22load_failure_exceptionE" title="Permalink to this definition">#</a><br /></dt>
+<dd><p>An exception that can be thrown by the scene when it failed to load a file for some reason. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3f3d6loader22load_failure_exception22load_failure_exceptionERKNSt6stringE">
-<span id="_CPPv3N3f3d6loader22load_failure_exception22load_failure_exceptionERKNSt6stringE"></span><span id="_CPPv2N3f3d6loader22load_failure_exception22load_failure_exceptionERKNSt6stringE"></span><span id="f3d::loader::load_failure_exception::load_failure_exception__ssCR"></span><span class="target" id="structf3d_1_1loader_1_1load__failure__exception_1a555e95fe8304061bd7736372267f735c"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">explicit</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">load_failure_exception</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">what</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3f3d6loader22load_failure_exception22load_failure_exceptionERKNSt6stringE" title="Permalink to this definition">#</a><br /></dt>
+<dt class="sig sig-object cpp" id="_CPPv4N3f3d5scene22load_failure_exception22load_failure_exceptionERKNSt6stringE">
+<span id="_CPPv3N3f3d5scene22load_failure_exception22load_failure_exceptionERKNSt6stringE"></span><span id="_CPPv2N3f3d5scene22load_failure_exception22load_failure_exceptionERKNSt6stringE"></span><span id="f3d::scene::load_failure_exception::load_failure_exception__ssCR"></span><span class="target" id="structf3d_1_1scene_1_1load__failure__exception_1ac9d2e898967ab161709bc871afc4e0a7"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="k"><span class="pre">explicit</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">load_failure_exception</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">what</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="s"><span class="pre">&quot;&quot;</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3f3d5scene22load_failure_exception22load_failure_exceptionERKNSt6stringE" title="Permalink to this definition">#</a><br /></dt>
 <dd></dd></dl>
 
 </div>
@@ -437,20 +437,20 @@ document.write(`
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="classf3d_1_1interactor.html"
+       href="classf3d_1_1ratio__t.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Class interactor</p>
+        <p class="prev-next-title">Class ratio_t</p>
       </div>
     </a>
     <a class="right-next"
-       href="classf3d_1_1log.html"
+       href="classf3d_1_1utils.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Class log</p>
+        <p class="prev-next-title">Class utils</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

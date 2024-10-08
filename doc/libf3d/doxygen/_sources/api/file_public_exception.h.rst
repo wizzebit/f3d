@@ -44,7 +44,7 @@ Included By
 
 - :ref:`file_public_image.h`
 
-- :ref:`file_public_loader.h`
+- :ref:`file_public_scene.h`
 
 
 

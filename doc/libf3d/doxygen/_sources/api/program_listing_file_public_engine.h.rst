@@ -16,8 +16,8 @@ Program Listing for File engine.h
    #include "exception.h"
    #include "export.h"
    #include "interactor.h"
-   #include "loader.h"
    #include "options.h"
+   #include "scene.h"
    #include "window.h"
    
    #include <map>
@@ -43,7 +43,7 @@ Program Listing for File engine.h
    
      window& getWindow();
    
-     loader& getLoader();
+     scene& getScene();
    
      interactor& getInteractor();
    

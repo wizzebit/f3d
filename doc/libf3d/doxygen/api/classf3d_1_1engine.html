@@ -140,18 +140,18 @@
 <li class="toctree-l2"><a class="reference internal" href="structf3d_1_1image_1_1metadata__exception.html">Struct image::metadata_exception</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structf3d_1_1image_1_1read__exception.html">Struct image::read_exception</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structf3d_1_1image_1_1write__exception.html">Struct image::write_exception</a></li>
-<li class="toctree-l2"><a class="reference internal" href="structf3d_1_1loader_1_1load__failure__exception.html">Struct loader::load_failure_exception</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structf3d_1_1mesh__t.html">Struct mesh_t</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structf3d_1_1point3__t.html">Struct point3_t</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structf3d_1_1scene_1_1load__failure__exception.html">Struct scene::load_failure_exception</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structf3d_1_1vector3__t.html">Struct vector3_t</a></li>
 <li class="toctree-l2"><a class="reference internal" href="classf3d_1_1camera.html">Class camera</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Class engine</a></li>
 <li class="toctree-l2"><a class="reference internal" href="class_structf3d_1_1exception.html">Class exception</a></li>
 <li class="toctree-l2"><a class="reference internal" href="classf3d_1_1image.html">Class image</a></li>
 <li class="toctree-l2"><a class="reference internal" href="classf3d_1_1interactor.html">Class interactor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="classf3d_1_1loader.html">Class loader</a></li>
 <li class="toctree-l2"><a class="reference internal" href="classf3d_1_1log.html">Class log</a></li>
 <li class="toctree-l2"><a class="reference internal" href="classf3d_1_1ratio__t.html">Class ratio_t</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classf3d_1_1scene.html">Class scene</a></li>
 <li class="toctree-l2"><a class="reference internal" href="classf3d_1_1utils.html">Class utils</a></li>
 <li class="toctree-l2"><a class="reference internal" href="classf3d_1_1window.html">Class window</a></li>
 <li class="toctree-l2"><a class="reference internal" href="typedef_types_8h_1a62f3e15e4e18455b52854622b27c02ed.html">Typedef f3d::angle_deg_t</a></li>
@@ -346,8 +346,8 @@ document.write(`
 <p>The main class of the libf3d to create all other instances. Configured on creation using an enum, then all objects can be accessed through their getter.</p>
 <p>Example usage for adding some files in the scene</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">f3d</span><span class="o">::</span><span class="n">engine</span><span class="w"> </span><span class="nf">eng</span><span class="p">();</span>
-<span class="n">f3d</span><span class="o">::</span><span class="n">loader</span><span class="o">&amp;</span><span class="w"> </span><span class="n">load</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">eng</span><span class="p">.</span><span class="n">getLoader</span><span class="p">();</span>
-<span class="n">load</span><span class="p">.</span><span class="n">add</span><span class="p">({</span><span class="s">&quot;path/to/file&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;path/to/another/file&quot;</span><span class="p">});</span>
+<span class="n">f3d</span><span class="o">::</span><span class="n">scene</span><span class="o">&amp;</span><span class="w"> </span><span class="n">sce</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">eng</span><span class="p">.</span><span class="n">getscene</span><span class="p">();</span>
+<span class="n">sce</span><span class="p">.</span><span class="n">add</span><span class="p">({</span><span class="s">&quot;path/to/file&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;path/to/another/file&quot;</span><span class="p">});</span>
 <span class="n">f3d</span><span class="o">::</span><span class="n">interactor</span><span class="o">&amp;</span><span class="w"> </span><span class="n">inter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">eng</span><span class="p">.</span><span class="n">getInteractor</span><span class="p">();</span>
 <span class="n">inter</span><span class="p">.</span><span class="n">start</span><span class="p">();</span>
 </pre></div>
@@ -402,8 +402,8 @@ document.write(`
 </dd></dl>
 
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N3f3d6engine9getLoaderEv">
-<span id="_CPPv3N3f3d6engine9getLoaderEv"></span><span id="_CPPv2N3f3d6engine9getLoaderEv"></span><span id="f3d::engine::getLoader"></span><span class="target" id="classf3d_1_1engine_1aa6efd6d7ef102a4c18311cdf7d97d327"></span><a class="reference internal" href="classf3d_1_1loader.html#_CPPv4N3f3d6loaderE" title="f3d::loader"><span class="n"><span class="pre">loader</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getLoader</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3f3d6engine9getLoaderEv" title="Permalink to this definition">#</a><br /></dt>
+<dt class="sig sig-object cpp" id="_CPPv4N3f3d6engine8getSceneEv">
+<span id="_CPPv3N3f3d6engine8getSceneEv"></span><span id="_CPPv2N3f3d6engine8getSceneEv"></span><span id="f3d::engine::getScene"></span><span class="target" id="classf3d_1_1engine_1aa2ade054b183cefb18d8e395af49ea91"></span><a class="reference internal" href="classf3d_1_1scene.html#_CPPv4N3f3d5sceneE" title="f3d::scene"><span class="n"><span class="pre">scene</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getScene</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N3f3d6engine8getSceneEv" title="Permalink to this definition">#</a><br /></dt>
 <dd><p>Get the loaded provided by the engine. </p>
 </dd></dl>
 
