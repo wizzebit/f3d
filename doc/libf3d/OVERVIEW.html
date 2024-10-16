@@ -52,8 +52,8 @@
 <span class="c1">// Load VTK native readers</span>
 <span class="n">f3d</span><span class="o">::</span><span class="n">engine</span><span class="o">::</span><span class="n">autoloadPlugins</span><span class="p">();</span>
 
-<span class="c1">// Create a f3d::engine</span>
-<span class="n">f3d</span><span class="o">::</span><span class="n">engine</span> <span class="nf">eng</span><span class="p">(</span><span class="n">f3d</span><span class="o">::</span><span class="n">window</span><span class="o">::</span><span class="n">Type</span><span class="o">::</span><span class="n">NATIVE_OFFSCREEN</span><span class="p">);</span>
+<span class="c1">// Create a f3d::engine with a offscreen window</span>
+<span class="n">f3d</span><span class="o">::</span><span class="n">engine</span> <span class="n">eng</span> <span class="o">=</span> <span class="n">f3d</span><span class="o">::</span><span class="n">engine</span><span class="o">::</span><span class="n">create</span><span class="p">(</span><span class="nb">true</span><span class="p">);</span>
 
 <span class="c1">// Load a geometry</span>
 <span class="n">eng</span><span class="p">.</span><span class="n">getScene</span><span class="p">().</span><span class="n">add</span><span class="p">(</span><span class="s">"path/to/file.ext"</span><span class="p">);</span>

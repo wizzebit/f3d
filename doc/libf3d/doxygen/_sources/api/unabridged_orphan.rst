@@ -25,6 +25,11 @@ Files
 .. toctree::
    :maxdepth: 5
 
+   file_public_context.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
    file_public_engine.h.rst
 
 .. toctree::

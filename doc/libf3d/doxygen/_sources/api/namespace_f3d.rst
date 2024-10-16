@@ -19,6 +19,10 @@ Classes
 
 - :ref:`exhale_struct_structf3d_1_1camera__state__t`
 
+- :ref:`exhale_struct_structf3d_1_1context_1_1loading__exception`
+
+- :ref:`exhale_struct_structf3d_1_1context_1_1symbol__exception`
+
 - :ref:`exhale_struct_structf3d_1_1engine_1_1libInformation`
 
 - :ref:`exhale_struct_structf3d_1_1engine_1_1no__interactor__exception`
@@ -44,6 +48,8 @@ Classes
 - :ref:`exhale_struct_structf3d_1_1vector3__t`
 
 - :ref:`exhale_class_classf3d_1_1camera`
+
+- :ref:`exhale_class_classf3d_1_1context`
 
 - :ref:`exhale_class_classf3d_1_1engine`
 

@@ -12,6 +12,7 @@ Files
 -----
 
 - :ref:`file_public_camera.h`
+- :ref:`file_public_context.h`
 - :ref:`file_public_engine.h`
 - :ref:`file_public_exception.h`
 - :ref:`file_public_image.h`

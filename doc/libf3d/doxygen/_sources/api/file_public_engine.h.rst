@@ -30,6 +30,8 @@ Includes
 --------
 
 
+- ``context.h`` (:ref:`file_public_context.h`)
+
 - ``exception.h`` (:ref:`file_public_exception.h`)
 
 - ``export.h``
