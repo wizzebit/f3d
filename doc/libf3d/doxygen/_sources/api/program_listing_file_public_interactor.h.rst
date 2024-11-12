@@ -27,9 +27,6 @@ Program Listing for File interactor.h
    class F3D_EXPORT interactor
    {
    public:
-     virtual interactor& setDropFilesCallBack(
-       std::function<bool(std::vector<std::string>)> callBack) = 0;
-   
    
      virtual interactor& addCommandCallback(
        std::string action, std::function<bool(const std::vector<std::string>&)> callback) = 0;
