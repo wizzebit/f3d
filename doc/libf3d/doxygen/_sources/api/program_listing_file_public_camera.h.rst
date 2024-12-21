@@ -23,10 +23,10 @@ Program Listing for File camera.h
    {
    struct F3D_EXPORT camera_state_t
    {
-     point3_t pos = { 0., 0., 1. };
-     point3_t foc = { 0., 0., 0. };
-     vector3_t up = { 0., 1., 0. };
-     angle_deg_t angle = 30.;
+     point3_t position = { 0., 0., 1. };
+     point3_t focalPoint = { 0., 0., 0. };
+     vector3_t viewUp = { 0., 1., 0. };
+     angle_deg_t viewAngle = 30.;
    };
    
    class F3D_EXPORT camera
