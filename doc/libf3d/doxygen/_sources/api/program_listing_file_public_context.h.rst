@@ -37,7 +37,7 @@ Program Listing for File context.h
    
      [[nodiscard]] static function osmesa();
    
-     [[nodiscard]] static function getSymbol(const std::string& lib, const std::string& func);
+     [[nodiscard]] static function getSymbol(std::string_view lib, std::string_view func);
    
      struct loading_exception : public exception
      {
