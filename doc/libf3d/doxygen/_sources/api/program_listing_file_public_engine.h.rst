@@ -62,7 +62,7 @@ Program Listing for File engine.h
      engine& operator=(const engine& other) = delete;
      engine& operator=(engine&& other) noexcept;
    
-     engine& setCachePath(const std::string& cachePath);
+     engine& setCachePath(const std::filesystem::path& cachePath);
    
      engine& setOptions(const options& opt);
    
@@ -78,12 +78,13 @@ Program Listing for File engine.h
    
      static std::map<std::string, bool> getRenderingBackendList();
    
-     static void loadPlugin(
-       const std::string& nameOrPath, const std::vector<std::string>& pluginSearchPaths = {});
+     static void loadPlugin(const std::string& pathOrName,
+       const std::vector<std::filesystem::path>& pluginSearchPaths = {});
    
      static void autoloadPlugins();
    
-     [[nodiscard]] static std::vector<std::string> getPluginsList(const std::string& pluginPath);
+     [[nodiscard]] static std::vector<std::string> getPluginsList(
+       const std::filesystem::path& pluginPath);
    
      struct libInformation
      {
@@ -126,6 +127,11 @@ Program Listing for File engine.h
      struct plugin_exception : public exception
      {
        explicit plugin_exception(const std::string& what = "");
+     };
+   
+     struct cache_exception : public exception
+     {
+       explicit cache_exception(const std::string& what = "");
      };
    
    private:
