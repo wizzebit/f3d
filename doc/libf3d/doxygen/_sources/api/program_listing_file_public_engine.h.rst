@@ -76,6 +76,8 @@ Program Listing for File engine.h
    
      [[nodiscard]] interactor& getInteractor();
    
+     static std::map<std::string, bool> getRenderingBackendList();
+   
      static void loadPlugin(
        const std::string& nameOrPath, const std::vector<std::string>& pluginSearchPaths = {});
    
