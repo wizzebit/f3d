@@ -38,20 +38,10 @@ Program Listing for File types.h
    
    struct F3D_EXPORT point3_t : std::array<double, 3>
    {
-     template<typename... Args>
-     point3_t(Args&&... args)
-       : array({ double(std::forward<Args>(args))... })
-     {
-     }
    };
    
    struct F3D_EXPORT vector3_t : std::array<double, 3>
    {
-     template<typename... Args>
-     vector3_t(Args&&... args)
-       : array({ double(std::forward<Args>(args))... })
-     {
-     }
    };
    
    using angle_deg_t = double;
@@ -127,7 +117,7 @@ Program Listing for File types.h
        return this->Array.data();
      }
    
-   private:
+   protected:
      std::array<double, N> Array{ 0 };
    };
    
@@ -192,6 +182,10 @@ Program Listing for File types.h
      [[nodiscard]] inline double z() const
      {
        return (*this)[2];
+     }
+     [[nodiscard]] operator f3d::vector3_t() const
+     {
+       return f3d::vector3_t{ this->Array };
      }
    };
    
