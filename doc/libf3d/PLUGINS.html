@@ -7,6 +7,7 @@
   VTK_READER <span class="si">${</span><span class="nv">vtk_classname</span><span class="si">}</span>       <span class="c1"># set the name of the VTK reader class you have created</span>
   FORMAT_DESCRIPTION <span class="s2">"description"</span>  <span class="c1"># set the proper name of the file format</span>
   EXCLUDE_FROM_THUMBNAILER          <span class="c1"># add this flag if you don't want thumbnail generation for this reader</span>
+  OPTIONS <span class="s2">"option1"</span> <span class="s2">"option2"</span>       <span class="c1"># use this to define reader specific option that can be defined by the user</span>
 <span class="p">)</span>
 
 <span class="nf">f3d_plugin_declare_reader</span><span class="p">(</span>
@@ -15,7 +16,7 @@
   MIMETYPES <span class="s2">"application/vnd.myext2"</span> <span class="c1"># set the mimetypes the reader can support</span>
   VTK_IMPORTER <span class="si">${</span><span class="nv">vtk_classname</span><span class="si">}</span>      <span class="c1"># set the name of the VTK importer class you have created</span>
   FORMAT_DESCRIPTION <span class="s2">"description"</span>   <span class="c1"># set the proper name of the file format</span>
-  CUSTOM_CODE <span class="s2">"file.inl"</span>             <span class="c1"># set this to add a custom code when instancing your class</span>
+  CUSTOM_CODE <span class="s2">"file.inl"</span>             <span class="c1"># set this to add a custom code when instancing your class, this is where reader options should be processed</span>
 <span class="p">)</span>
 
 <span class="c1"># More f3d_plugin_declare_reader calls are possible</span>
