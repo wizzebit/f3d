@@ -113,7 +113,7 @@
   },"16": {
     "doc": "Developer Documentation",
     "title": "Developer Documentation",
-    "content": "# Developer Documentation - [How to get started with building F3D.](/doc/dev/GETTING_STARTED.html) - [How to build F3D.](/doc/dev/BUILD.html) - [How to test F3D.](/doc/dev/TESTING.html) - [How to contribute to F3D.](/CONTRIBUTING.html) - [How to Generate coverage and sanitizer report.](/doc/dev/GENERATE.html) - [Overview of the architecture of F3D.](/doc/dev/ARCHITECTURE.html) - [Coding Style.](/doc/dev/CODING_STYLE.html) - [Roadmaps and release cycle.](/doc/dev/ROADMAPS_AND_RELEASES.html) - [Governance.](/doc/dev/GOVERNANCE.html) - [Maintainers and Contributors.](/doc/dev/MAINTAINERS_AND_CONTRIBUTORS.html) - [Code of conduct.](/CODE_OF_CONDUCT.html) ",
+    "content": "# Developer Documentation - [How to get started with building F3D.](/doc/dev/GETTING_STARTED.html) - [How to build F3D.](/doc/dev/BUILD.html) - [How to test F3D.](/doc/dev/TESTING.html) - [How to contribute to F3D.](/CONTRIBUTING.html) - [How to Generate coverage and sanitizer report.](/doc/dev/GENERATE.html) - [Overview of the architecture of F3D.](/doc/dev/ARCHITECTURE.html) - [Coding Style.](/doc/dev/CODING_STYLE.html) - [Roadmaps and release cycle.](/doc/dev/ROADMAPS_AND_RELEASES.html) - [Governance.](/doc/dev/GOVERNANCE.html) - [Maintainers and Contributors.](/doc/dev/MAINTAINERS_AND_CONTRIBUTORS.html) - [Code of conduct.](/CODE_OF_CONDUCT.html) - [How to build F3D for webassembly.](/doc/dev/BUILD_WASM.html) ",
     "url": "/doc/dev/README_DEV.html",
     
     "relUrl": "/doc/dev/README_DEV.html"
